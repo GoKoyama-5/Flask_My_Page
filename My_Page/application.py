@@ -16,3 +16,6 @@ def portfolio():
 @app.route("/blog")
 def blog():
     return render_template("blog.html")
+
+if _name_ == '__main__':
+    app.run()
