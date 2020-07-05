@@ -1,38 +1,114 @@
-{% extends "layout.html" %}
+<html lang="en">
+    <head>
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <!-- CSS -->
+        <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- JavaScript -->
+        <script src="../static/js/bootstrap.min.js"></script>
+        <title>Go's Page</title>
+    </head>
 
 {% block body %}
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Menu
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="{{url_for('home')}}">
+                    Home
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="{{url_for('portfolio')}}">
+                    Portfolio
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="{{url_for('about')}}">
+                    About
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="{{url_for('blog')}}">
+                    Blog
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
 <div class="container">
-  <div class="row justify-content-center mt-5">
-    <div class="col-12 text-center mb-4">
-      <h2>GO KOYAMA</h2>
-    </div>
-        <div class="col-3">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Portfolio1</h5>
-              <p class="card-text">portfolioの説明</p>
-              <a href="#" class="btn btn-primary">link</a>
+    <div class="row justify-content-center mt-5">
+      <div class="col-12 text-center mb-5 mt-5">
+          <h1>GO KOYAMA</h1>
+            </div>
+                <div class="col-4 mt-5 mb-5">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Portfolio1</h5>
+                      <p class="card-text">portfolioの説明</p>
+                      <a href="#" class="btn btn-primary">link</a>
+                    </div>
+                  </div>
+                </div>
+            <div class="col-4 mt-5 mb-5">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Portfolio2</h5>
+                  <p class="card-text">portfolio2の説明</p>
+                  <a href="##" class="btn btn-primary">link</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 mt-5 mb-5">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Portfolio3</h5>
+                  <p class="card-text">portfolio3の説明</p>
+                  <a href="###" class="btn btn-primary">link</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 mb-5">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Portfolio4</h5>
+                  <p class="card-text">portfolio4の説明</p>
+                  <a href="###" class="btn btn-primary">link</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 mb-5">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Portfolio5</h5>
+                  <p class="card-text">portfolio5の説明</p>
+                  <a href="###" class="btn btn-primary">link</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 mb-5">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Portfolio5</h5>
+                  <p class="card-text">portfolio5の説明</p>
+                  <a href="###" class="btn btn-primary">link</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-3">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Portfolio2</h5>
-              <p class="card-text">portfolio2の説明</p>
-              <a href="#" class="btn btn-primary">link</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-3">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Portfolio3</h5>
-              <p class="card-text">portfolio3の説明</p>
-              <a href="#" class="btn btn-primary">link</a>
-            </div>
-          </div>
-        </div>
-    </div>
+
+<div class="col-12 text-center">
+  <footer>
+    <a href="#">WORK</a>
+    <a href="#">ABOUT</a>
+    <a href="#">HELLO</a>
+    <a href="#">Twitter</a>
+    <a href="#">Mail</a>
+  </footer>
 </div>
 {% endblock %}
