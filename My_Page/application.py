@@ -17,5 +17,9 @@ def portfolio():
 def blog():
     return render_template("blog.html")
 
+@app.route("/getintouch")
+def getintouch():
+    return render_template("getintouch.html")
+
 if __name__ == '__main__':
     app.run()
