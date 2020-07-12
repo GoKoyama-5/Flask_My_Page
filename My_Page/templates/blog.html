@@ -1,23 +1,26 @@
+<div style="background-color: #000033;">
 {% extends "layout.html" %}
 
 {% block body %}
 <div class="container">
     <div class="row justify-content-center mt-5">
-      <div class="col-12 text-center mb-5 mt-5">
+      <div class="col-12 text-center mb-5 mt-5 text-white">
+        <font face="Times New Roman">
           <h1>Hello!!　Thank you for coming to my blog</h1>
           <p></p><br>
           <div style="font-size:40px;">
             <p>Sorry,please wait a little more</p>
+            </font>
             </div>
             </div>
-          </div>
-      </div>
-      <div class="container">
           <div class="row justify-content-center mt-5">
-            <div class="col-12 text-center mb-5 mt-5">
+            <div class="col-12 text-center mb-5 mt-5 text-white">
+              <font face="Times New Roman">
               <h2>Coming Soon!</h2>
+              </font>
             </div>
           </div>
+        </div>
       </div>
 
       <!-- Footer -->
@@ -32,7 +35,7 @@
             <!-- Grid column -->
             <div class="col-md-2 mb-3">
               <h6 class="text-uppercase font-weight-bold">
-                <a href="#!">WORK</a>
+                <a href="{{url_for('portfolio')}}"><font face="Times New Roman">WORK</font></a>
               </h6>
             </div>
             <!-- Grid column -->
@@ -40,7 +43,7 @@
             <!-- Grid column -->
             <div class="col-md-2 mb-3">
               <h6 class="text-uppercase font-weight-bold">
-                <a href="#!">ABOUT</a>
+                <a href="{{url_for('about')}}"><font face="Times New Roman">ABOUT</font></a>
               </h6>
             </div>
             <!-- Grid column -->
@@ -48,7 +51,7 @@
             <!-- Grid column -->
             <div class="col-md-2 mb-3">
               <h6 class="text-uppercase font-weight-bold">
-                <a href="#!">HELLO</a>
+                <a href="{{url_for('blog')}}"><font face="Times New Roman">BLOG</font></a>
               </h6>
             </div>
           </div>
@@ -82,7 +85,7 @@
               <a class="mail-ic">
                 <i class="fas fa-envelope white-text mr-4"> </i>
               </a>
-              <a class="github-ic">
+              <a class="github-ic" href="https://github.com/GoKoyama-5/Flask_My_Page.git">
                 <i class="fab fa-github white-text mr-4"> </i>
               </a>
             </div>

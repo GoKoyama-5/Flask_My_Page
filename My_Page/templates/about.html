@@ -1,64 +1,72 @@
+<div style="background-color: #000033;">
 {% extends "layout.html" %}
 
 {% block body %}
+
 <div class="container">
     <div class="row justify-content-center mt-5">
-      <div class="col-12 text-center mt-5">
+      <div class="col-12 text-center mt-5 mb-5 text-white">
+        <font face="Times New Roman">
           <h2>ABOUT ME</h2>
+        </font>
             </div>
           </div>
-      </div>
-<div class="container">
-    <div class="row">
-        <div class="col-4">
-          <P>画像を入れたい</p>
-        </div>
-    <div class="col-6 ml-5">
-    <p>こんにちは。Goと申します。<br>
-      <br>
-      <br>
-      私はプログラミングを勉強し始めた駆け出しのエンジニアです。<br>
-      現在は獣医系の生物学を専攻している大学4回生です。<br>
-      大学では、統計学やPythonを始めとした様々な言語に挑戦しています。今後はBlogの展開や情報発信などもやっていきたいと考えています。<br>
-      趣味は動物や生き物を見て、触れ合うこと。体を動かすことが好きなアクティブな性格です！好きな動物は犬や牛科の動物が大好きです。<br>
-      何事も楽しんで取り組む精神を持っていろんなことに挑戦しています。
-    </p>
-</div>
-<div class="container">
-  <div class="row justify-content-center mt-5">
-    <div class="col-12 text-center mb-5 mt-5">
-      <h2>SKILLS</h2>
-      </div>
-        <div class="container">
           <div class="row">
-            <div class="col-md-4 text-center mb-5">
-              <h4><i class="fab fa-python"></i>&nbsp;&nbsp;Python</h4>
-              <p></p><br>
-              <p>Levels:<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
-              <p>
-                Flamework:Flask<br>
-                Libraly:Numpy,Matplotlib,Sk-learn<br>
-              </p>
-            </div>
-            <div class="col-md-4 text-center mb-5">
-              <h4><i class="fab fa-html5"></i>&nbsp;&nbsp;HTML5</h4>
-              <p></p><br>
-              <p>Levels:<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
-                </p>
-            </div>
-            <div class="col-md-4 text-center mb-5">
-              <h4><i class="fab fa-css3-alt"></i>&nbsp;&nbsp;CSS</h4>
-              <p></p><br>
-              <p>Levels:<i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
-              <p>
-                Flamework:Bootstrap4<br>
-              </p>
+            <div class="col-4">
+              <img src="static/images/IMG_1928.jpeg" alt="" width="277" height="369" class="rounded-circle">
               </div>
+              <div class="col-8 text-white">
+                  <p>
+                  <br>
+                    私は最近プログラミングを勉強し始めた神奈川出身の駆け出しエンジニアです。<br>
+                    現在は獣医系の生物学を専攻している大学4回生です。<br>
+                    大学では、統計学やPythonを始めとした様々な言語に挑戦しています。今後はBlogの展開や情報発信などもやっていきたいと考えています。<br>
+                    趣味は動物や生き物を見て、触れ合うこと。体を動かすことが好きなアクティブな性格です！好きな動物は犬や牛,馬などの動物が大好きです。<br>
+                    何事も楽しんで取り組む精神を持っていろんなことに挑戦しています。
+                    </p>
+                  </div>
                 </div>
+          <div class="row justify-content-center mt-5">
+            <div class="col-12 text-center mb-5 mt-5 text-white">
+              <font face="Times New Roman">
+              <h2>SKILLS</h2>
+              </font>
+            </div>
+          </div>
+            <div class="row">
+              <div class="col-md-4 text-center mb-5 text-white">
+                <font face="Times New Roman">
+                <h3><i class="fab fa-python"></i>&nbsp;&nbsp;Python</h3>
+                <p></p><br>
+                <p>Levels:<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
+                <p>
+                  Flamework:Flask<br>
+                  Libraly:Numpy,Matplotlib,Sk-learn<br>
+                </p>
+                </font>
+              </div>
+              <div class="col-md-4 text-center mb-5 text-white">
+                <font face="Times New Roman">
+                <h3><i class="fab fa-html5"></i>&nbsp;&nbsp;HTML5</h3>
+                <p></p><br>
+                <p>Levels:<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                </p>
+                </font>
+              </div>
+              <div class="col-md-4 text-center mb-5 text-white">
+                <font face="Times New Roman">
+                <h3><i class="fab fa-css3-alt"></i>&nbsp;&nbsp;CSS</h3>
+                <p></p><br>
+                <p>Levels:<i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
+                <p>
+                  Flamework:Bootstrap4<br>
+                </p>
+                </font>
               </div>
             </div>
           </div>
-        </div>
+
+
 
         <!-- Footer -->
         <footer class="page-footer font-small indigo">
@@ -72,7 +80,7 @@
               <!-- Grid column -->
               <div class="col-md-2 mb-3">
                 <h6 class="text-uppercase font-weight-bold">
-                  <a href="#!">WORK</a>
+                  <a href="{{url_for('portfolio')}}"><font face="Times New Roman">WORK</font></a>
                 </h6>
               </div>
               <!-- Grid column -->
@@ -80,7 +88,7 @@
               <!-- Grid column -->
               <div class="col-md-2 mb-3">
                 <h6 class="text-uppercase font-weight-bold">
-                  <a href="#!">ABOUT</a>
+                  <a href="{{url_for('about')}}"><font face="Times New Roman">ABOUT</font></a>
                 </h6>
               </div>
               <!-- Grid column -->
@@ -88,7 +96,7 @@
               <!-- Grid column -->
               <div class="col-md-2 mb-3">
                 <h6 class="text-uppercase font-weight-bold">
-                  <a href="#!">HELLO</a>
+                  <a href="{{url_for('blog')}}"><font face="Times New Roman">BLOG</font></a>
                 </h6>
               </div>
             </div>
@@ -122,7 +130,7 @@
                 <a class="mail-ic">
                   <i class="fas fa-envelope white-text mr-4"> </i>
                 </a>
-                <a class="github-ic">
+                <a class="github-ic" href="https://github.com/GoKoyama-5/Flask_My_Page.git">
                   <i class="fab fa-github white-text mr-4"> </i>
                 </a>
               </div>
@@ -131,4 +139,5 @@
 
         </footer>
         <!-- Footer -->
+        </div>
 {% endblock %}

@@ -1,6 +1,70 @@
+<div style="background-color: #000033;">
 {% extends "layout.html" %}
 
 {% block body %}
+      <div class="container-fluid">
+
+        <div class="row justify-content-center mt-5">
+              <div class="col-md-3 mt-5 mb-1">
+                <div class="card bg-dark text-white">
+                    <img class="card-img" src="static/images/IMG_0238.jpeg" alt="">
+                    <div class="card-img-overlay">
+                      <h5 class="card-title">Portfolio1</h5>
+                      <p class="card-text">Coming Soon</p>
+                    </div>
+                  </div>
+                </div>
+          <div class="col-md-3 mt-5 mb-1">
+            <div class="card bg-dark text-white">
+                <img class="card-img" src="static/images/IMG_0216.jpeg" alt="">
+                <div class="card-img-overlay">
+                  <h5 class="card-title">Portfolio2</h5>
+                  <p class="card-text">Coming Soon</p>
+                </div>
+              </div>
+          </div>
+
+          <div class="col-md-3 mt-5 mb-1 mr-1">
+            <div class="card bg-dark text-white">
+                <img class="card-img" src="static/images/IMG_0189.jpeg" alt="">
+                <div class="card-img-overlay">
+                  <h5 class="card-title">Portfolio3</h5>
+                  <p class="card-text">Coming Soon</p>
+                </div>
+              </div>
+          </div>
+
+          <div class="col-md-3 mb-5">
+            <div class="card bg-dark text-white">
+                <img class="card-img" src="static/images/IMG_4394.jpeg" alt="">
+                <div class="card-img-overlay">
+                  <h5 class="card-title">Portfolio4</h5>
+                  <p class="card-text">Coming Soon</p>
+                </div>
+              </div>
+          </div>
+
+          <div class="col-md-3 mb-5">
+            <div class="card bg-dark text-white">
+                <img class="card-img" src="static/images/IMG_4013.jpeg" alt="">
+                <div class="card-img-overlay">
+                  <h5 class="card-title">Portfolio5</h5>
+                  <p class="card-text">Coming Soon</p>
+                </div>
+              </div>
+          </div>
+
+          <div class="col-md-3 mb-5 mr-1">
+            <div class="card bg-dark text-white">
+                <img class="card-img" src="static/images/IMG_3072.jpeg" alt="">
+                <div class="card-img-overlay">
+                  <h5 class="card-title">Portfolio6</h5>
+                  <p class="card-text">Coming Soon</p>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
 
 <!-- Footer -->
 <footer class="page-footer font-small indigo">
@@ -14,7 +78,7 @@
       <!-- Grid column -->
       <div class="col-md-2 mb-3">
         <h6 class="text-uppercase font-weight-bold">
-          <a href="#!">WORK</a>
+          <a href="{{url_for('portfolio')}}"><font face="Times New Roman">WORK</font></a>
         </h6>
       </div>
       <!-- Grid column -->
@@ -22,7 +86,7 @@
       <!-- Grid column -->
       <div class="col-md-2 mb-3">
         <h6 class="text-uppercase font-weight-bold">
-          <a href="#!">ABOUT</a>
+          <a href="{{url_for('about')}}"><font face="Times New Roman">ABOUT</font></a>
         </h6>
       </div>
       <!-- Grid column -->
@@ -30,7 +94,7 @@
       <!-- Grid column -->
       <div class="col-md-2 mb-3">
         <h6 class="text-uppercase font-weight-bold">
-          <a href="#!">HELLO</a>
+          <a href="{{url_for('blog')}}"><font face="Times New Roman">BLOG</font></a>
         </h6>
       </div>
     </div>
@@ -64,7 +128,7 @@
         <a class="mail-ic">
           <i class="fas fa-envelope white-text mr-4"> </i>
         </a>
-        <a class="github-ic">
+        <a class="github-ic" href="https://github.com/GoKoyama-5/Flask_My_Page.git">
           <i class="fab fa-github white-text mr-4"> </i>
         </a>
       </div>
@@ -73,4 +137,5 @@
 
 </footer>
 <!-- Footer -->
+</div>
 {% endblock %}
